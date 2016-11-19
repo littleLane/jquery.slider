@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>家长空间</title>
+    <link rel="stylesheet" href="skin/style.css">
+</head>
+
+<body>
+    <div class="tab_change">
+        <ul>
+            <li tab="main" class="current">主页</li>
+        </ul>
+    </div>
+
+    <div class="tab_content">
+        <div id="mainList" class="main_list">
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+            <div class="item_box">
+                <div class="item_header">
+                    <img class="photo_bg" src="skin/photo_bg.png" alt="">
+                    <img class="photo" src="skin/headerPic.png" alt="">
+                    <div class="item_title"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class="orange">A</i></div>
+                    <div class="item_time">10月12日</div>
+                </div>
+                <div class="item_content">henhao</div>
+                <div class="item_bg"></div>
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" id="toNext" />
+    <input type="hidden" id="toPreve" />
+</body>
+<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="jquery.slider.js"></script>
+<script type="text/javascript">
+    (function() {
+        initHtmlFontSize();
+
+        $(window).bind('resize', initHtmlFontSize);
+
+        //初始化根字体大小
+        function initHtmlFontSize() {
+            var W = $(document).width();
+            var S = 7.5;
+            S = W > 750 ? 10 : S;
+            W = W > 750 ? 750 : W;
+
+            $('html').css('font-size', W / S + 'px');
+        }
+
+        var $mainList = $("#mainList");
+
+        //下拉刷新
+        $mainList.slider({
+            toNext: $("#toNext"),
+            toPreve: $("#toPreve"),
+            url: "data.json",
+            param: {
+                userGid: "",
+                currentPage: 1,
+                pageSize: 20
+            },
+            done: function(resdata) {
+                if (resdata && resdata.data.length > 0) {
+                    var data = resdata.data;
+                    var strHtml = "";
+                    for (var i = 0, l = data.length; i < l; i++) {
+                        strHtml += "<div class=\"item_box\">";
+                        strHtml += "<div class=\"item_header\">";
+                        strHtml += "<img class=\"photo_bg\" src=\"skin/photo_bg.png\">";
+                        strHtml += "<img class=\"photo\" src=\"skin/headerPic.png\">";
+                        strHtml += "<div class=\"item_title\"><em>黄梓琪1</em> 为曾小勇添加了一条评价：<i class=\"orange\">A</i></div>";
+                        strHtml += "<div class=\"item_time\">10月12日</div>";
+                        strHtml += "</div>";
+                        strHtml += "<div class=\"item_content\">henhao</div>";
+                        strHtml += "<div class=\"item_bg\"></div>";
+                        strHtml += "</div>";
+                    }
+
+                    $("#mainList").append(strHtml);
+                }
+            }
+        });
+    })()
+</script>
+
+</html>
